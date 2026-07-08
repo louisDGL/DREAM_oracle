@@ -1,8 +1,8 @@
 # Bayesian oracle (2A/2B information ceiling)
 
-Isolated scripts for the **Bayes oracle** of the paper
-(`phasing_gate0_figures/article.tex`, §Discussion "DECODE already sits at the
-information ceiling", and Methods Prop. `prop:oraclebound` / Cor. `cor:decodegap`).
+The **Bayes oracle** for subclonal-reconstruction scoring on the SMC-Het/DREAM
+benchmark: the best achievable per-mutation 2A/2B assignment given the *true* cluster
+prevalences, i.e. the information ceiling any method can reach on this data.
 
 The oracle is the **posterior-mean predictor** of Eq. `eq:post2b`, evaluated at the
 **true** cluster prevalences and depths. It is *not* an extra model — it is the
