@@ -4,11 +4,11 @@ The **Bayes oracle** for subclonal-reconstruction scoring on the SMC-Het/DREAM
 benchmark: the best achievable per-mutation 2A/2B assignment given the *true* cluster
 prevalences, i.e. the information ceiling any method can reach on this data.
 
-The oracle is the **posterior-mean predictor** of Eq. `eq:post2b`, evaluated at the
+The oracle is the **posterior-mean predictor**, evaluated at the
 **true** cluster prevalences and depths. It is *not* an extra model — it is the
 numerical realisation of the closed-form 2B ceiling `S_2B*`, i.e. the best score any
 soft reconstruction can attain at fixed depth/data. It suffers only read noise plus
-the equal-CCF degeneracy (Prop. `prop:nonid`–`prop:depth`).
+the equal-CCF degeneracy.
 
 ## What each mutation gets
 
