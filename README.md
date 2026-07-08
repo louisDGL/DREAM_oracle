@@ -17,7 +17,7 @@ CCF `c_k` (from `truth.1C`), purity `rho` (`truth.1A`), and per-locus copy numbe
 multiplicity `(C, m)` (`DREAM_data/*_mutation_table_with_multiplicity.csv`):
 
     xi_k = c_k * m / (rho*C + 2*(1-rho))          # Eq. (eq:vaf), diploid -> c_k/2
-    R[i,k] ∝ pi_k * Binom(b_i | d_i, xi_k)        # posterior responsibility, Eq. (eq:post2b)
+    R[i,k] ∝ pi_k * Binom(b_i | d_i, xi_k)        # posterior responsibility
 
 The soft co-clustering matrix is `CCM = R @ R.T` (diagonal set to 1); the hard 2A
 assignment is `argmax_k R[i,k]`. Both are scored with the **same** SMC-Het harness
